@@ -1,0 +1,573 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #EBEBEB;
+}
+
+.open{
+    width: 100%;
+
+    height: 777px;
+    overflow: hidden;
+    background: linear-gradient(to right, #0C2A28 50%, #EBEBEB 50%);
+    position: relative;
+    
+    
+}
+.open_head{
+    display: flex;
+    margin-top: 25px;
+   font-family: 'Koulen', sans-serif;
+   font-size: 24px;
+    width: 100%;
+    justify-content: center;
+    animation: dow 1s ease-out;
+    
+
+}
+
+.open_head_text{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+/* .open_gt{
+    width: 100%;
+
+
+} */
+.open_gt_to{
+    font-family: 'Heathergreen', sans-serif ;
+    font-size: 170px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
+    animation:dow 1s ease-out ;
+  
+}
+.text_nho{
+    animation:dow 1s ease-out ;
+}
+.open_gt_nho{
+    font-family: 'Koulen', sans-serif;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    
+    animation:opengt_nho 1s ease-out ;
+}
+.open_anh{
+
+    width: 1000px;
+    height: 450px;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    animation:up 1s ease-out ;
+}
+#anhprofile2{
+    width: 587px;
+    height: 1039px;
+    position: absolute;
+    margin-top: -220px;
+    z-index: 2;
+}
+.open_icon{
+    width: 85px;
+    height: 85px;
+    filter: drop-shadow(0 0 70px #EBEBEB);
+    position: absolute;
+    opacity:85% ;
+}
+#open_php{
+    width: 90px;
+    height: 90px;
+    left: 250px;
+    top: 65px;
+    transform: rotate(-28.55deg);
+    animation-name: php_ll;             /* Tên @keyframes */
+  animation-duration: 3s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+  animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+  animation-iteration-count: infinite; /* Lặp lại vô hạn */
+  
+}
+
+#open_css{
+    width: 83px;
+    height: 83px;
+    left: 180px;
+    top: 190px;
+    transform: rotate(-23.97deg);
+    animation-name: css_ll;             /* Tên @keyframes */
+  animation-duration: 3.5s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+  animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+  animation-iteration-count: infinite; /* Lặp lại vô hạn */
+  
+}
+#open_html{
+    width: 155px;
+    height: 155px;
+    bottom: -70px;
+    left:120px ;
+    transform: rotate(29.7deg);
+    animation-name: html_ll;             /* Tên @keyframes */
+  animation-duration: 2.5s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+  animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+  animation-iteration-count: infinite; /* Lặp lại vô hạn */
+}
+#open_js{
+    width: 73px;
+    height: 73px;
+    top: 280px;
+    left: 50px;
+    transform: rotate(-34.49deg);
+    animation-name: js_ll;             /* Tên @keyframes */
+  animation-duration: 3s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+  animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+  animation-iteration-count: infinite; /* Lặp lại vô hạn */
+}
+.open_icon2{
+    width: 85px;
+    height: 85px;
+    filter: drop-shadow(0 0 50px #0C2A28);
+    position: absolute;
+    opacity:85% ;
+}
+#open_capcut{
+    right: 280px;
+    top: 90px;
+    width: 68px;
+    height: 68px;
+    transform: rotate(-32.52deg);
+    animation-name: cap_ll;             /* Tên @keyframes */
+  animation-duration: 3.5s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+  animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+  animation-iteration-count: infinite; /* Lặp lại vô hạn */
+}
+#open_figma{
+    width: 70px;
+    height: 70px;
+    right: 50px;
+    top: 230px;
+    transform: rotate(16.22deg);
+        animation-name: fig_ll;             /* Tên @keyframes */
+  animation-duration: 3s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+  animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+  animation-iteration-count: infinite; /* Lặp lại vô hạn */
+}
+#open_canva{
+    width: 88px;
+    height: 88px;
+    right: 180px;
+    top: 170px;
+    transform: rotate(16.22deg);
+    animation-name: fig_ll;             /* Tên @keyframes */
+  animation-duration: 2.5s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+  animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+  animation-iteration-count: infinite; /* Lặp lại vô hạn */
+}
+#open_ae{
+    width: 140px;
+    height: 140px;
+    bottom: 10px;
+    right: 150px ;
+    transform: rotate(29.7deg);
+    animation-name: ae_ll;             /* Tên @keyframes */
+  animation-duration: 3.5s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+  animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+  animation-iteration-count: infinite; /* Lặp lại vô hạn */
+}
+.open_day1_1{
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 740px;
+    height: 100px;
+    
+}
+.open_day1{
+    width: 110%;
+    height: 40px ;
+    background-color:#0C2A28;
+    transform: rotate(-1.5deg);
+    position: absolute;
+    top: 30px;
+    z-index: 1;
+    left: -20px;
+    box-shadow: 5px 5px 5px black ;
+}
+.open_day2{
+    width: 100%;
+    height: 40px ;
+    background-color:#EBEBEB;
+    z-index: 2;
+    position: absolute;
+    box-shadow: 5px 5px 5px black ;
+    font-family: 'Koulen', sans-serif ;
+    color: #0C2A28;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.ttcn{
+    width: 100%;
+    height: 700px;
+    
+    
+}
+.ttcn_text{
+    color: #0C2A28;
+    font-family:'Coolvetica', sans-serif;
+    font-size: 36px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+.ttcn_tt{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+.ttcn_tt_vs{
+    width:663px;
+    height: 488px;
+    background-color: #18191D;
+    border-radius: 20px;
+    position: relative;
+}
+.ttcn_tt_the{
+    width: 363px;
+    height: 533px;
+    background-color: aqua;
+}
+.ttcn_tt_vs_head{
+    width: 100%;
+    height: 61px;
+    background-color: #0C2A2A;
+    display: flex;
+    justify-content: space-between;
+    border-top-right-radius: 20px;
+    border-top-left-radius:20px ;
+}
+.ttcn_tt_vs_head_hinhtrong{
+    width: 100px;
+    height: 100%;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.ttcn_tt_vs_head_hinhtrong_tron{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.ttcn_tt_vs_head_iconvs{
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#anh_vs{
+    width: 35px;
+    height: 35px;
+}
+#ttcn_tt_vs_head_text{
+    font-size: 19px;
+    color: #FFFFFF;
+    font-family: 'ABeeZee',sans-serif;
+    margin-right: 25px;
+}
+.ttcn_tt_vs_center{
+    width: 100%;
+    height: 375px;
+    background-color: #18191D;
+    display: flex;
+    overflow: hidden;
+
+}
+.ttcn_tt_vs_center_trai{
+    height: 100%;
+    width: 155px;
+    background-color:#171C20 ;
+    overflow: hidden;
+}
+.hopjs{
+    width: 100%;
+    height: 39px;
+    background-color: #252A2E ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+#ttcn_tt_vs_center_logojs{
+    font-family: 'Montserrat', sans-serif;
+    color:#FFD43B ;
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 16px;
+}
+#ttcn_tt_vs_center_textjs{
+    font-size: 16px;
+    font-family: 'Fira Code', monospace;
+    color: #FFFFFF;
+}
+.ttcn_tt_vs_center_phai{
+    width:550px;
+    height:100% ;
+    background-color: #18191D;
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: 'Fira Code', monospace;
+    margin-left: 10px;
+    color: #D8B398;
+    text-shadow: 0 0 1px #D8B398 ;
+}
+.ttcn_tt_vs_center_thanhso{
+    height: 100%;
+    color:#72767F ;
+    font-size: 14px;
+    font-family: 'Fira Code', monospace;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.ttcn_tt_vs_center_phai_xanh{
+    color: #A6D4F0;
+    text-indent: 10em;;
+    text-shadow: 0 0 1px #A6D4F0 ;
+}
+.dau{
+    color: #FFFFFF;
+}
+.ttcn_tt_vs_botton{
+
+    width: 100%;
+    height: 52px;
+    background-color: #13171A;
+    display: flex;
+    align-items: center;
+    font-family: 'Aoboshi One', serif;
+    color: #A3A5A4;
+    gap: 10px;
+    font-size: 19px;
+    border-bottom-right-radius:20px ;
+    border-bottom-left-radius:20px ;
+}
+.github1{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
+#chibi1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -136px;
+    left: -20px;
+}
+.gtngan{
+    width: 100%;
+    height: 500px;
+    background-color: #7C8B8B;
+    display: flex;
+    justify-content: center;
+
+}
+.gtngan_box{
+    width: 935px;
+    height: 277px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 180px;
+    position: relative;
+}
+#gtngan_box_tieude{
+    font-family:'Coolvetica', sans-serif;
+    font-size: 32px;
+    color: #0D2B2B;
+    width: 100%;
+
+    text-align: center;
+    margin-top: 10px;
+}
+#gtngan_box_anh{
+    position: absolute;
+    right: 10px;
+    width: 235px;
+    height: 415px;
+    top:-100px;
+    z-index: 2;
+}
+#gtngan_box_nenanh{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    right: 55px;
+    background-color: #3d5555;
+    z-index: 1;
+}
+.gtngan_box_vanban{
+    font-family: 'Poppins', sans-serif;
+
+    width: 690px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #0C2A2A;
+}
+.dh{
+    width: 100%;
+    height: 777px;
+    background-color: #ebebeb;
+    overflow: hidden;
+}
+.dh_tieude{
+    width: 100%;
+    
+    font-size: 35px;
+    text-align: center;
+    font-family:'Coolvetica', sans-serif;
+    margin-top: 70px;
+}
+.dh_muc{
+    width: 100%;
+ 
+    overflow: hidden;
+    height: 660px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.dh_muc_cacmuc{
+    width: 350px;
+    height: 539px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin-top: 60px;
+    box-shadow: 5px 5px 15px  #0000004d;
+}
+.dh_muc_cacmuc_anh{
+    width: 100px;
+    height: 100px;
+  
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+
+}
+.dh_muc_cacmuc_tieude{
+    color: #0D2B2B;
+    width: 100%;
+    text-align: center;
+    font-family:'Coolvetica', sans-serif;
+    font-size: 23px;
+    margin-top: 20px;
+}
+.dh_muc_cacmuc_vanban{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.ttlh{
+    width: 100%;
+    height: 349px;
+    background-color: #0d2b2b;
+    overflow: hidden;
+}
+.ttlh_tieude{
+    width: 100%;
+    font-size: 32px;
+    font-family:'Coolvetica', sans-serif;
+    color:#EBEBEB ;
+    text-align: center;
+    margin-top: 50px;
+}
+.ttlh_boxtt{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    height: 300px;  
+    color: #EBEBEB;
+    display: flex;
+    text-align: center;
+    gap: 50px;
+justify-content: center;
+    margin-top: 30px;
+}
+.ttlh_boxtt_1_mail{
+    display: flex;
+
+    margin-top: 45px;
+    gap: 5px;
+}
+.my-atropos {
+    width: 333px;
+    height: 503px;
+   
+    font-family: 'Marcellus SC', serif;
+    /* overflow: hidden; ✅ che mép khi xoay */
+ 
+  }
+
+  .my-atropos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ✅ ảnh phủ khung */
+    display: block;
+    border-radius: 20px;
+    
+
+  }
+
+  #content {
+    position: absolute;
+    bottom: 90px;
+    left: 20px;
+
+    width: 100%;
+    font-size: 17px;
+    color: white;
+  }
+  #anhbotom{
+    position: absolute;
+    bottom: 0;
+    width: 363px;
+    height: auto;
+  }
+  .atropos-inner{
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  #dayanh{
+    position: absolute;
+    top: -300px;
+    height: 800px;
+    width: auto;
+  
+
+  }

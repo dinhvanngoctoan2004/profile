@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhiều Animation khi cuộn</title>
+    
+    <style>
+        /* CSS NẰM TRONG NÀY */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0 20px;
+            background-color: #f4f4f4;
+        }
+
+        .spacer {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: #ddd;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        .spacer h2 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        /* --- 1. Định nghĩa các animation --- */
+
+        /* Animation 1: Bay từ dưới lên (cho Box 1) */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animation 2: Bay từ trái sang (cho Box 2) */
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* --- 2. Định nghĩa các class --- */
+
+        /* Trạng thái "chờ" (ẩn đi lúc đầu) */
+        .hidden-on-scroll {
+            opacity: 0;
+            /* Giúp tránh "giật" layout khi phần tử chưa chạy animation */
+            visibility: hidden; 
+            transition: opacity 0.5s, visibility 0.5s;
+        }
+
+        /* Class kích hoạt cho Box 1 */
+        .animate-fade-in-up {
+            visibility: visible;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        /* Class kích hoạt cho Box 2 */
+        .animate-fade-in-left {
+            visibility: visible;
+            animation: fadeInLeft 1s ease-out forwards;
+        }
+
+
+        /* --- Style cho các box --- */
+        .box {
+            width: 200px;
+            height: 200px;
+            border-radius: 12px;
+            margin-bottom: 30px; /* Thêm khoảng cách giữa 2 box */
+        }
+        
+        #box1 {
+            background: linear-gradient(135deg, #d63384, #fd7e14);
+        }
+        
+        #box2 {
+            background: linear-gradient(135deg, #198754, #20c997);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="spacer">
+        <h2>Cuộn xuống dưới 👇</h2>
+    </div>
+
+    <div id="box1" class="box hidden-on-scroll" data-animation-class="animate-fade-in-up"></div>
+
+    <div id="box2" class="box hidden-on-scroll" data-animation-class="animate-fade-in-left"></div>
+
+
+    <div class="spacer">
+        <h2>Bạn đã thấy cả hai! 🎉</h2>
+    </div>
+
+    
+    <script>
+        // JAVASCRIPT NẰM TRONG NÀY
+
+        document.addEventListener("DOMContentLoaded", function() {
+          
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        
+                        // 1. Lấy tên class animation từ thuộc tính "data-"
+                        const animationClass = entry.target.dataset.animationClass;
+                        
+                        if (animationClass) {
+                            // 2. Thêm class animation đó vào phần tử
+                            entry.target.classList.add(animationClass);
+                        }
+                        
+                        // 3. Xóa class "ẩn"
+                        entry.target.classList.remove('hidden-on-scroll');
+                        
+                        // 4. Dừng theo dõi
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.2 // Kích hoạt khi 20% box lọt vào màn hình
+            });
+
+            // Lấy TẤT CẢ các phần tử có class 'hidden-on-scroll'
+            const hiddenElements = document.querySelectorAll('.hidden-on-scroll');
+            
+            // Bảo observer theo dõi từng phần tử
+            hiddenElements.forEach((el) => observer.observe(el));
+          
+        });
+    </script>
+
+</body>
+</html>

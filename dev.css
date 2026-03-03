@@ -1,0 +1,676 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #EBEBEB;
+}
+.open{
+    width: 100%;
+
+    height: 777px;
+    overflow: hidden;
+    background: linear-gradient(to right, #0C2A28 85%, #EBEBEB 15%);
+    position: relative;
+}
+.open_head{
+    display: flex;
+    margin-top: 25px;
+   font-family: 'Koulen', sans-serif;
+   font-size: 24px;
+    width: 100%;
+    justify-content: center;
+
+}
+.open_head_text{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+/* .open_gt{
+    width: 100%;
+
+
+} */
+.open_gt_to{
+    font-family: 'Heathergreen', sans-serif ;
+    font-size: 170px;
+    display: flex;
+    margin-left: 80px;
+    margin-top: 120px; 
+    
+
+  
+}
+.open_gt_nho{
+    font-family:'Coolvetica', sans-serif;
+    font-size: 32px;
+    display: flex;
+    margin-left: 80px;
+    gap: 180px;
+    
+
+}
+.open_anh{
+
+    width: 1000px;
+    height: 450px;
+    /* margin: 0 auto; */
+    position: absolute;
+    bottom: 10px;
+    right:  -18%;
+    display: flex;
+    justify-content: center;
+}
+#anhprofile2{
+    width: 587px;
+    height: 1039px;
+    position: absolute;
+    margin-top: -220px;
+    z-index: 2;
+}
+.open_icon{
+    width: 85px;
+    height: 85px;
+    filter: drop-shadow(0 0 70px #EBEBEB);
+    position: absolute;
+    opacity:85% ;
+}
+#open_php{
+    width: 90px;
+    height: 90px;
+    left: 250px;
+    top: 65px;
+    transform: rotate(-28.55deg);
+    animation-name: php_ll;             /* Tên @keyframes */
+  animation-duration: 3s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+  animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+  animation-iteration-count: infinite; /* Lặp lại vô hạn */
+  
+}
+
+#open_css{
+    width: 83px;
+    height: 83px;
+    left: 180px;
+    top: 190px;
+    transform: rotate(-23.97deg);
+    animation-name: css_ll;             /* Tên @keyframes */
+  animation-duration: 3.5s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+  animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+  animation-iteration-count: infinite; /* Lặp lại vô hạn */
+  
+}
+#open_html{
+    width: 155px;
+    height: 155px;
+    bottom: -70px;
+    left:120px ;
+    transform: rotate(29.7deg);
+    animation-name: html_ll;             /* Tên @keyframes */
+  animation-duration: 2.5s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+  animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+  animation-iteration-count: infinite; /* Lặp lại vô hạn */
+}
+#open_js{
+    width: 73px;
+    height: 73px;
+    top: 280px;
+    left: 50px;
+    transform: rotate(-34.49deg);
+    animation-name: js_ll;             /* Tên @keyframes */
+  animation-duration: 3s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+  animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+  animation-iteration-count: infinite; /* Lặp lại vô hạn */
+}
+.open_icon2{
+    width: 85px;
+    height: 85px;
+    filter: drop-shadow(0 0 50px #0C2A28);
+    position: absolute;
+    opacity:85% ;
+    filter: blur(5px);
+}
+#open_capcut{
+    right: 280px;
+    top: 90px;
+    width: 68px;
+    height: 68px;
+    transform: rotate(-32.52deg);
+    animation-name: cap_ll;             /* Tên @keyframes */
+  animation-duration: 3.5s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+  animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+  animation-iteration-count: infinite; /* Lặp lại vô hạn */
+}
+#open_figma{
+    width: 70px;
+    height: 70px;
+    right: 50px;
+    top: 230px;
+    transform: rotate(16.22deg);
+        animation-name: fig_ll;             /* Tên @keyframes */
+  animation-duration: 3s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+  animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+  animation-iteration-count: infinite; /* Lặp lại vô hạn */
+}
+#open_canva{
+    width: 88px;
+    height: 88px;
+    right: 180px;
+    top: 170px;
+    transform: rotate(16.22deg);
+    animation-name: fig_ll;             /* Tên @keyframes */
+  animation-duration: 2.5s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+  animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+  animation-iteration-count: infinite; /* Lặp lại vô hạn */
+}
+#open_ae{
+    width: 140px;
+    height: 140px;
+    bottom: 10px;
+    right: 150px ;
+    transform: rotate(29.7deg);
+    animation-name: ae_ll;             /* Tên @keyframes */
+  animation-duration: 3.5s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+  animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+  animation-iteration-count: infinite; /* Lặp lại vô hạn */
+}
+
+.open_day1_1{
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 740px;
+    height: 100px;
+    
+}
+.open_day1{
+    width: 110%;
+    height: 40px ;
+    background-color:#0C2A28;
+    transform: rotate(-1.5deg);
+    position: absolute;
+    top: 30px;
+    z-index: 2;
+    left: -20px;
+    box-shadow: 5px 5px 5px black ;
+    font-family: 'Koulen', sans-serif ;
+        display: flex;
+    align-items: center;
+}
+.open_day2{
+    width: 100%;
+    height: 40px ;
+    background-color:#EBEBEB;
+    z-index: 3;
+    position: absolute;
+    box-shadow: 5px 5px 5px black ;
+    font-family: 'Koulen', sans-serif ;
+    color: #0C2A28;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tqkn{
+    width: 100%;
+    height: 777px;
+    overflow: hidden;
+
+}
+.tqkn_td{
+    width: 100%;
+    
+    font-family:'Coolvetica', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 110px;
+    font-size: 36px;
+}
+.tqkn_box{
+    width: 1054px;
+    height: 488px;
+    background-color: #0C0C0C;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius:20px ;  
+    position: relative;  
+}
+.tqkn_box_head{
+    width: 100%;
+    height: 61px;
+    background-color: #0C2A2A;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+    position: relative;
+}
+.tqkn_box_head_tap{
+    width: 187px;
+    height: 41px;
+    position: absolute;
+    bottom: 0;
+    background-color: #0C0C0C;
+    left: 20px;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+    display: flex;
+    align-items: center;
+}
+.tqkn_box_head_tap_anh{
+    width: auto;
+    height: 23px;
+    margin-left: 8px;
+    ;
+}
+.tqkn_box_head_tap_x{
+    width: auto;
+    height: 22px;
+}
+.tqkn_box_head_3c{
+    width: 80px;
+    height: 100%;
+    
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tqkn_box_head_3c_c{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+}
+.tqkn_box_tx{
+    width: 95%;
+    height: 80%;
+    margin: 0 auto;
+    font-family: 'Fira Code', monospace;
+}
+.tqkn_box_tx1{
+    font-size: 18px;
+    margin-top: 15px;
+    color: #CCCCCC;
+    text-shadow:1px #CCCCCC  ;
+    
+}
+.tqkn_box_img{
+    width: 134px;
+    height: auto;
+    position: absolute;
+    top: -160px;
+    right: 100px;
+    filter: drop-shadow(1px 1px 5px #000000);
+}
+.tqkn_box_kn{
+    width: 185px;
+    height: 71px;
+    border-radius: 35px;
+    position: absolute;
+    background-color: aliceblue;
+    z-index: 3;
+    box-shadow: 5px 5px 10px #404040;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation-name: lolung;             /* Tên @keyframes */
+    animation-duration: 3.5s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+    animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+    animation-iteration-count: infinite;
+}
+
+
+#tqkn_box_kn_front{
+    top: -50px;
+    left: -150px;
+    animation-name: lolung;             /* Tên @keyframes */
+    animation-duration: 3.5s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+    animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+    animation-iteration-count: infinite;
+}
+.tqkn_box_kn_text{
+    font-size:24px ;
+    color: #0C2A2A;
+    font-family: 'Koulen', sans-serif;
+    margin-left: 23px;
+}
+.tqkn_box_kn_ht{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #0C2A2A;
+    font-size:24px ;
+    color: #fff;
+    font-family: 'Koulen', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+#tqkn_box_kn_backend{
+    top: 40px;
+    right: -150px;
+        animation-name: lolung;             /* Tên @keyframes */
+    animation-duration: 3s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+    animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+    animation-iteration-count: infinite;
+}
+#tqkn_box_kn_tool{
+    bottom: 80px;
+    left: -100px;
+        animation-name: lolung;             /* Tên @keyframes */
+    animation-duration: 3s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+    animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+    animation-iteration-count: infinite;
+}
+
+#tqkn_box_kn_db{
+    bottom: -30px;
+    right: -30px;
+        animation-name: lolung;             /* Tên @keyframes */
+    animation-duration: 3.5s;            /* Thời gian hoàn thành 1 chu kỳ: 3 giây */
+    animation-timing-function: ease-in-out; /* Chuyển động mượt, chậm ở đầu/cuối */
+    animation-iteration-count: infinite;
+}
+.knpm{
+    width: 100%;
+    height: 777px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+.knpm_day{
+    width: 110%;
+    height: 40px ;
+    background-color:#0C2A28;
+    z-index: 3;
+    position: absolute;
+    box-shadow: 1px 1px 5px rgb(97, 97, 97) ;
+    font-family: 'Koulen', sans-serif ;
+    color: #EBEBEB;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    left: -5px;
+    position: absolute;
+
+}
+#knpm_day_1{
+    top: 20px;
+    transform: rotate(-1.5deg);
+ 
+
+}
+#knpm_day_2{
+    top: 160px;
+    transform: rotate(4deg);
+    
+}
+
+#knpm_day_3{
+    top: 360px;
+    transform: rotate(-4deg);
+    
+}
+
+#knpm_day_4{
+    top: 560px;
+    transform: rotate(4deg);
+    
+}
+
+#knpm_day_5{
+    top: 710px;
+    transform: rotate(-1.5deg);
+    
+}
+.knpm_text{
+    font-size: 36px;
+    font-family:'Coolvetica', sans-serif;
+    color: #0C2A2A;
+    margin: 0 auto;
+    margin-top: 255px;
+}
+.knpm_img{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    right: 55%;
+    left: 45%;
+    top: 255px;
+    z-index: 3;
+    filter: drop-shadow(3px 3px 5px #000000);
+
+}
+
+.knpm_note{
+    width: 216px;
+    height: 274px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #535353;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 4;
+    font-size: 24px;
+    color: #0C2A2A;
+    font-family: 'Koulen', sans-serif;
+    
+
+}
+.knpm_note_text{
+    width: 100%;
+    text-align: center;
+    
+}
+.knpm_note_img{
+    width: 30px;
+    height: 30px;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+.knpm_note_icon{
+    width: 90%;
+    height: 60%;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.knpm_note_icon_img{
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(2px 2px 1px #a6a6a6);
+}
+#knpm_note_f{
+    top: 110px;
+    left: 10%;
+    transform: rotate(-5deg);
+    transform-origin: 50% 0%;
+    
+}
+#knpm_note_b{
+    transform: rotate(5deg);
+    top: 175px;
+    right: 10%;
+    height: 200px;
+    transform-origin: 50% 0%;
+
+}
+#knpm_note_d{
+    bottom: 70px;
+    left: 15%;
+    transform: rotate(5deg);
+    height: 200px;
+    transform-origin: 50% 0%;
+}
+
+#knpm_note_t{
+    bottom: 25px;
+    right: 25%;
+    transform: rotate(-5deg);
+    height: 200px;
+    transform-origin: 50% 0%;
+}
+.daht{
+    width: 100%;
+    height: 777px;
+    background-color:#cacece ;
+    overflow: hidden;
+}
+.daht_td{
+    font-family:'Coolvetica', sans-serif;
+    font-size: 36px;
+    color: #0C2A28;
+    width: 100%;
+
+    text-align: center;
+    margin-top: 70px;
+}
+.daht_da{
+    width: 95%;
+    height: 85%;
+    display: flex;
+   
+    flex-wrap: wrap-reverse;
+    margin: 0 auto;
+    column-gap: 50px; 
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.daht_da_box{
+    width: 350px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px #a6a6a6;
+    overflow: hidden;
+    
+}
+.daht_da_box_anh{
+    width:309px ;
+    height: 145px;
+    border-radius: 20px;
+    background-color: aqua;
+    margin: 0 auto;
+    margin-top: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.daht_da_box_anh1{
+    width: 309px;
+    height: auto;
+    
+
+}
+.daht_da_box_td{
+    color: #0C2A28;
+    font-family:'Coolvetica', sans-serif;
+    text-align: center;
+    width: 100%;
+    margin-top: 5px;
+    font-size:20px ;
+}
+.daht_da_box_nd{
+    color: #0C2A28;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    width: 100%;
+    margin-top: 5px;
+    font-size:15px 
+    
+}
+.dhpt{
+    width: 100%;
+    height: 777px;
+    overflow: hidden;
+    position: relative;
+}
+.dhpt_td{
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+    color: #0C2A2A;
+    font-family:'Coolvetica', sans-serif;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.dhpt_nd{
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.dhpt_dh{
+    width: 950px;
+    height: 65.6%;
+
+    margin: 0 auto;
+    position: relative;
+}
+.dhpt_botom{
+    width: 100%;
+    height: 50px;
+    background-color: #0D2B2B;
+    position: absolute;
+    bottom: 0;
+}
+.dhpt_dh_box{
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 0px 10px #797979;
+    position: absolute;
+    bottom: 0;
+}
+#dhpt_dh_box1{
+    width: 50px;
+    height: 50px;
+    left: 202px;
+}
+.dhpt_dh_img{
+    width: 432px;
+    bottom: -83px;
+    position: absolute;
+    filter: drop-shadow(5px 0px 5px  #797979);
+}
+#dhpt_dh_box2{
+    width: 250px;
+    height: 250px;
+    left: 282px;
+}
+
+#dhpt_dh_box3{
+    width: 350px;
+    height: 350px;
+    left: 562px;
+}
+.dhpt_dh_box h3{
+    color: #0C2A28;
+    font-family:'Coolvetica', sans-serif;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.dhpt_dh_box p{
+    font-size: 20px;
+    color: #0D2B2B;
+    font-family: 'Poppins', sans-serif;
+    margin-left:15px ;
+    margin-top: 15px;
+    width: 90%;
+}
+#dhpt_dh_box3 p{
+    margin-left: 35px;
+}
